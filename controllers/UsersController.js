@@ -4,6 +4,7 @@ import dbClient from '../utils/db';
 import redisClient from '../utils/redis';
 import { userQueue } from '../worker';
 
+
 class UsersController {
   static async postNew(req, res) {
     const { email, password } = req.body;

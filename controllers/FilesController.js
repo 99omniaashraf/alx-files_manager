@@ -7,6 +7,7 @@ import dbClient from '../utils/db';
 import redisClient from '../utils/redis';
 import { fileQueue } from '../worker';
 
+
 class FilesController {
   static async postUpload(req, res) {
     const token = req.header('X-Token');
